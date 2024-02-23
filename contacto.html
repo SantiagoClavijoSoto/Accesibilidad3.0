@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="keywords" content="Alturas HSEQ">
+<meta name="description" content="Alturas HSEQ">
+<meta name="author" content="Alturas HSEQ">
+
+<title>Alturas HSEQ</title>
+
+<link rel="shortcut icon" href="images/GraficoAb2.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="floating-whatsapp-chat/whatsapp-chat.css">
+<script src="js/modernizer.js"></script>
+<!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+<script type="text/javascript" src="floating-whatsapp-chat/whatsapp-chat.js"></script>
+
+<head>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <script>
+
+        var allow_submit = false
+
+        function captcha_filled() {
+            allow_submit = true
+        }
+
+        function captcha_expired() {
+            allow_submit = false
+        }
+
+        function check_captcha_filled(e) {
+            console.log('captcha-verified')
+
+            if (!allow_submit) {
+                alert('ERROR: Completa el captcha.')
+                return false
+            }
+            captcha_expired()
+            return true
+        }
+    </script>
+</head>
+
+<body class="modal-open">
+
+    <div id="contenido">
+        <div id="preloader">
+            <div class="loader">
+                <div class="loader__bar"></div>
+                <div class="loader__bar"></div>
+                <div class="loader__bar"></div>
+                <div class="loader__bar"></div>
+                <div class="loader__bar"></div>
+                <div class="loader__ball"></div>
+            </div>
+        </div>
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="">
+                        <div class="left-top">
+                            <div class="email-box">
+                                <a href="https://www.google.com/maps/place/Alturas+hseq/@4.6771649,-74.1511989,21z/data=!4m5!3m4!1s0x8e3f9d09c475aa17:0x4fb10907a860ce00!8m2!3d4.6771973!4d-74.1511245"
+                                    target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> Carrera 108
+                                    #16i-18,
+                                    Fontibón, Bogotá D.C.</a>
+                            </div>
+                            <div class="email-box">
+                                <a href="mailto:info@alturashseq.com"><i class="fa fa-envelope-o"
+                                        aria-hidden="true"></i>
+                                    info@alturashseq.com</a>
+                            </div>
+                            <div class="phone-box">
+                                <a href="tel:1234567890"><i class="fa fa-phone" aria-hidden="true"></i> (+601) 772 1904
+                                </a>
+                            </div>
+                            <div class="phone-box">
+                                <a href="https://wa.me/+573212209829" target="_blank"><i class="fa fa-mobile"
+                                        aria-hidden="true"></i> (+57) 321 220 9829</a>
+                            </div>
+                            <div class="social-box">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100086926601773"
+                                            target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/alturashseq/" target="_blank"><i
+                                                class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://wa.me/+573212209829" target="_blank"><i class="fa fa-whatsapp"
+                                                aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <header class="header header_style_01 container-fluid">
+            <nav class="megamenu navbar navbar-expand-lg navbar-light bg-light navbar-default justify-content-between">
+                <a class="navbar-brand" href="index.html"><img src="images/logos/Logo-Alturas-Hseq-Negro.png"
+                        alt="logo"></a>
+                <button class="navbar-toggler toggler-example style-icon" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="text-color-blue"><i
+                            class="fa fa-bars fa-2x"></i></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-right">
+                        <li class="nav-item mt-2"><a class="nav-link active effect-2" href="index.html">Inicio</a></li>
+                        <li class="nav-item mt-2"><a class="nav-link active effect-2" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item mt-2"><a class="nav-link active effect-2"
+                                href="formacion_en_alturas.html">Formación en
+                                alturas</a></li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link active effect-2" href="cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link active effect-2" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item mt-2"><a class="nav-link active effect-2"
+                                href="contacto.html">Contáctenos</a>
+                        </li>
+                        <li class="nav-item mt-3"><a class="nav-link active nav-veri effect-2"
+                                href="cronograma.html">Cronograma de cursos</a></li>
+                        <li class="nav-item mt-3"><a class="nav-link active nav-veri effect-2"
+                                href="https://forms.gle/ykfsJYPQ2mQTUnha9">Preinscripción</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <div>
+                <h1 class="h1_contact">Contáctenos</h1>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-6 container-fluid">
+                    <div class="map-responsive">
+                        <iframe width="500" height="400"
+                            src="https://maps.google.com/maps?q=carrera%20108%2016i-18%20alturas%20hseq&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-6">
+                    <form class="my-form" action="contact.php" method="post" onsubmit="return check_captcha_filled()">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Ej. Andrés Pérez"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Ej. ejemplo@tudominio.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Número de contacto</label>
+                            <input type="number" class="form-control" id="phone" name="phone"
+                                placeholder="Ej. 3201234567" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="business">Empresa</label>
+                            <input type="text" class="form-control" id="business" name="business"
+                                placeholder="Ej. Alturas HSEQ">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" class="form-control" id="subject" name="subject"
+                                placeholder="Ej. Cotización cursos" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea class="form-control" id="message" name="message"
+                                placeholder="Ej. Deseo conocer su portafolio de servicios." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="horns" name="horns" required>
+                            <label class="label-line" for="horns">Estoy de acuerdo con la <a class="style-anchor-policy"
+                                    href="https://alturashseq.com/politicas/P-TRATAMIENTO_DE_DATOS-ALTURAS.pdf"
+                                    target="_blank">POLÍTICA DE TRATAMIENTO DE DATOS
+                                    PERSONALES.</a></label>
+                        </div>
+                        <div class="g-recaptcha reCAPTCHA2" data-callback="captcha_filled"
+                            data-expired-callback="captcha_expired"
+                            data-sitekey="6LcVK4UhAAAAAD6TFaKqOVWx6FdqmvDlK23HX502">
+                        </div>
+                        <div class="btn-center"><button class="btn btn-default effect-2"
+                                type="submit">Contáctenos</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <div class="marcas">
+                    <span>Conéctese con nosotros en las redes sociales:</span>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/profile.php?id=100086926601773" class="me-4 marcas"
+                        target="_blank">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/alturashseq/" class="me-4 marcas" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://wa.me/+573212209829" class="me-4 marcas" target="_blank">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </section>
+            <section class="footer2">
+                <div class="container-fluid text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 logoAlturas">
+                            <a href="/index.html"><img src="images/logos/Logo-Alturas-Hseq-Negro.png"
+                                    alt="logo" /></a><br>
+                            <a href="/index.html">Inicio</a><br>
+                            <a href="/nosotros.html">Nosotros</a><br>
+                            <a href="/formacion_en_alturas.html">Formación en alturas</a><br>
+                            <a href="/cursos.html">Cursos</a><br>
+                            <a href="/servicios.html">Servicios</a><br>
+                            <a href="/contacto.html">Contáctenos</a><br>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4 Exclusivo_h6">
+                                Nuestras marcas
+                            </h6>
+                            <p><a href="https://consultoriaycapacitacionhseq.com/" class="marcas effect-1"
+                                    target="_blank"><button class="button_2" name="button1"></button></a></p>
+                            <p><a href="https://hseqvirtual.com/" class="marcas effect-1" target="_blank"><button
+                                        class="button_3" name="button2"></button></a></p>
+                            <p><a href="http://www.avasas.com.co/" class="marcas effect-1" target="_blank"><button
+                                        class="button_4" name="button3"></button></a></p>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4 Exclusivo_h6">
+                                Enlaces de interés
+                            </h6>
+                            <p><a class="nav-link active nav-veri2 effect-1"
+                                    href="vericacion_de_certificados.html">Verificar
+                                    Certificados</a></p>
+                            <p><a class="nav-link active nav-veri2 effect-1" href="trabaje_con_nosotros.html">Trabaje
+                                    con
+                                    nosotros</a></p>
+                            <p><a class="nav-link active nav-veri2 effect-1" href="pqrs.html">PQRS</a></p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4 Exclusivo_h6">
+                                Contáctenos
+                            </h6>
+                            <p><a class="marcas"
+                                    href="https://www.google.com/maps/place/Alturas+hseq/@4.6771649,-74.1511989,21z/data=!4m5!3m4!1s0x8e3f9d09c475aa17:0x4fb10907a860ce00!8m2!3d4.6771973!4d-74.1511245"
+                                    target="_blank"><i class="fa fa-map-marker"></i> Carrera 108 #16i-18, Fontibón,
+                                    Bogotá
+                                    D.C.</a><br></p>
+                            <p><a class="marcas" href="mailto:info@alturashseq.com"><i class="fa fa-envelope-o"></i>
+                                    info@alturashseq.com</a><br></p>
+                            <p><a class="marcas" href="tel:1234567890"><i class="fa fa-phone"></i> (+601) 772
+                                    1904</a><br>
+                            </p>
+                            <p><a class="marcas" href="https://wa.me/+573212209829" target="_blank"><i
+                                        class="fa fa-mobile"></i> (+57) 321 220 9829</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center p-4 Copyright-Final Copy_Style">
+                © Copyright 2023 Alturas HSEQ. Todos los derechos reservados. <a class="Copy_Style text-decoration-line"
+                    href="https://alturashseq.com/politicas/P-TRATAMIENTO_DE_DATOS-ALTURAS.pdf" target="_blank">Política
+                    de privacidad.</a>
+            </div>
+        </footer>
+        <a href="#" id="scroll-to-top" class="dmtop global-radius effect-1"><i class="fa fa-angle-up"></i></a>
+
+        <div class="dmtop margin-accesibilidad">
+            <button type="button" class="btn btnAccesibilidad" id="botoon" data-bs-toggle="modal"
+                data-bs-target="#modalAcc">
+            </button>
+        </div>
+
+        <!--Botón WhatsApp-->
+        <div class="dmtop" id="myButton"></div>
+        <script type="text/javascript">
+            whatsappchat.multipleUser({
+                selector: "#myButton",
+                users: [
+                    {
+                        name: "Información general",
+                        phone: "https://wa.me/message/XJTN4LTSNKA6A1",
+                        designation: "Cursos, horarios, etc.",
+                        image:
+                            "/floating-whatsapp-chat/assets/SAC.jpg",
+                    },
+                    {
+                        name: "Solicita tu cotización",
+                        phone: "https://wa.me/message/SCF64Z5YSQ2SA1",
+                        designation: "Pregunta por nuestros precios.",
+                        image:
+                            "/floating-whatsapp-chat/assets/unnamed.png",
+                    },
+                ],
+                headerMessage:
+                    "<strong>¡Hola! Haga clic en una de nuestras áreas a continuación para chatear en WhatsApp.</strong>",
+                chatBoxMessage: "Nuestro equipo responderá en un momento.",
+                color: "#2db742",
+            });
+        </script>
+        <script src="js/all.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/portfolio.js"></script>
+        <script src="js/hoverdir.js"></script>
+    </div>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
+
+    <div
+        x-data="{ grayscale: 0, contrasteMode: 0, saturacionMode: 0, leerMode: 0, resaltar: 0, indicadoresS: ['gray', 'gray', 'bue'],indicadoresC: ['gray', 'gray', 'blue'], indicadoresL: ['gray', 'gray', 'blue'], indicadoresG: ['gray', 'gray', 'gray', 'gray', 'gray', 'blue'] }"
+        x-init="
+
+    let grayscaleFilter = '';
+let contrastFilter = '';
+let saturationFilter = '';
+
+$watch('grayscale', value => {
+switch (value) {
+    case 20: 
+        grayscaleFilter = 'grayscale(20%)'; 
+        indicadoresG = ['blue', 'gray', 'gray', 'gray', 'gray', 'gray'];
+        break;
+    case 40: 
+        grayscaleFilter = 'grayscale(40%)'; 
+        indicadoresG = ['blue', 'blue', 'gray', 'gray', 'gray', 'gray'];
+        break;
+    case 60: 
+        grayscaleFilter = 'grayscale(60%)';
+        indicadoresG = ['blue', 'blue', 'blue', 'gray', 'gray', 'gray'];
+        break; 
+    case 80: 
+        grayscaleFilter = 'grayscale(80%)';
+        indicadoresG = ['blue', 'blue', 'blue', 'blue', 'gray', 'gray'];
+        break;
+    case 100: 
+        grayscaleFilter = 'grayscale(100%)';
+        indicadoresG = ['blue', 'blue', 'blue', 'blue', 'blue', 'gray'];
+        break;
+    case 0:
+        grayscaleFilter = 'grayscale(0)';
+        indicadoresG = ['gray', 'gray', 'gray', 'gray', 'gray', 'blue'];
+        break;
+}
+document.documentElement.style.filter = contrastFilter + ' ' + grayscaleFilter + ' ' + saturationFilter;
+});
+
+$watch('contrasteMode', value => {
+switch (value % 3) {
+    case 0: 
+        contrastFilter = 'invert(0)';
+        indicadoresC = ['gray', 'gray', 'blue'] 
+        break;
+    case 1: 
+        contrastFilter = 'invert(1)'; 
+        indicadoresC = ['blue', 'gray', 'gray']
+        break;
+    case 2: 
+        contrastFilter = 'sepia(1)'; 
+        indicadoresC = ['gray', 'blue', 'gray']
+        break;
+}
+document.documentElement.style.filter = contrastFilter + ' ' + grayscaleFilter + ' ' + saturationFilter;
+});
+
+$watch('saturacionMode', value => {
+switch (value % 3) {
+    case 0: 
+        saturationFilter = 'saturate(1)'; 
+        indicadoresS = ['gray', 'gray', 'blue']
+        break;
+    case 1: 
+        saturationFilter = 'saturate(2)'; 
+        indicadoresS = ['blue', 'gray' , 'gray']
+        break;
+    case 2: 
+        saturationFilter = 'saturate(0.5)';
+        indicadoresS = ['gray', 'blue', 'gray'] 
+        break; 
+}
+document.documentElement.style.filter = contrastFilter + ' ' + grayscaleFilter + ' ' + saturationFilter;
+});
+    $watch('leerMode', value => {
+        let crosshair = document.getElementById('crosshair');
+        let readingMask = document.getElementById('readingMask'); // Asegúrate de tener una referencia a este elemento
+        let e = { pageX: window.innerWidth / 2, pageY: window.innerHeight * 0.95 }; // 75% hacia abajo en la pantalla
+        switch (value % 3) {
+            case 0: // normal mode
+                document.onmousemove = null;
+                crosshair.style.display = 'none';
+                readingMask.style.display = 'none';
+                document.body.style.cursor = 'auto';
+                document.body.classList.remove('large-cursor')
+                document.body.classList.remove('blur');
+                indicadoresL = ['gray', 'gray', 'blue']
+                break;
+            case 1: // crosshair mode
+                document.onmousemove = function(e) {
+                    crosshair.style.left = e.pageX - (crosshair.offsetWidth / 2) + 'px';
+                    crosshair.style.top = e.pageY - (crosshair.offsetHeight / 2) + 'px';
+                    crosshair.style.display = 'block';
+                    readingMask.style.display = 'none';
+                    document.body.style.cursor = 'auto';
+                    indicadoresL = ['blue', 'gray', 'gray']
+                }
+                document.onmousemove(e); // Ejecuta la función inmediatamente
+                break;
+            case 2:
+                document.onmousemove = function(e) {
+                    readingMask.style.left = e.pageX - (readingMask.offsetWidth / 2) + 'px';
+                    readingMask.style.top = e.pageY - (readingMask.offsetHeight / 2) + 'px';
+                    readingMask.style.display = 'block';
+                    crosshair.style.display = 'none';
+                    document.body.style.cursor = 'auto';
+                    document.body.classList.add('blur');
+                    indicadoresL = ['gray', 'blue', 'gray']
+                }
+                document.onmousemove(e); // Ejecuta la función inmediatamente
+                break;
+        } 
+    });
+
+    $watch('resaltar', value => {
+        let links = document.querySelectorAll('a');
+        links.forEach(link => {
+        if (value) {
+            link.style.backgroundColor = 'black';
+            link.style.color = 'yellow';
+        } else {
+            link.style.backgroundColor = '';
+            link.style.color= '';
+        }
+            
+        });
+    })
+ ">
+
+        <div id="readingMask" class="reading-mask"></div>
+        <!-- Modal -->
+        <div class="modal fade" id="modalAcc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" id="modalDialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="titulo">Accesibilidad</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="contet1" onclick="increaseFontSize()">
+
+                            <div>
+                                <button id="bton1" onclick="increaseFontSize()">
+                                    <img id="aumentar" src="images/aumentar.png" alt="aumentar fuente">
+                                </button>
+                            </div>
+
+                            <div id="fonts">
+                                <span class="button-text">Aumentar Fuente</span>
+                            </div>
+
+                        </div>
+
+                        <div id="contet2" onclick="decreaseFontSize()">
+
+                            <div>
+                                <button id="bton3" onclick="decreaseFontSize()">
+                                    <img id="disminuir" src="images/disminuir.png" alt="disminuir fuente">
+                                </button>
+                            </div>
+
+                            <div>
+                                <span class="button-text">Disminuir Fuente</span>
+                            </div>
+
+                        </div>
+
+                        <div id="contet3" onclick="resetFontSize()">
+
+                            <div>
+                                <button id="bton2" onclick="resetFontSize()">
+                                    <img id="restaurar" src="images/restaurar.png" alt="Restaurar tamaño de fuente">
+                                </button>
+                            </div>
+
+                            <div>
+                                <span class="button-text">Restablecer Fuente</span>
+                            </div>
+
+                        </div>
+
+                        <div id="contet5" @click="saturacionMode = (saturacionMode + 1) % 3" class="indicators">
+
+                            <div>
+                                <button id="bton6" @click="saturacionMode = (saturacionMode + 1) % 3">
+                                    <img id="saturar" src="images/saturar.png" alt="saturacion">
+                                </button>
+                            </div>
+
+                            <div>
+                                <span class="button-text">Modo saturar</span>
+                                <span :style="'color: ' + indicadoresS[0]">Alto</span>
+                                <span :style="'color: ' + indicadoresS[1]">Bajo</span>
+                                <span :style="'color: ' + indicadoresS[2]">Normal</span>
+                            </div>
+
+                        </div>
+
+                        <div id="contet6" @click="contrasteMode = (contrasteMode + 1) % 3">
+
+                            <div>
+
+                                <button id="bton5" @click="contrasteMode = (contrasteMode + 1) % 3">
+                                    <img id="contraste" src="images/contraste.png" alt="contraste">
+                                </button>
+
+                            </div>
+
+                            <div>
+                                <span class="button-text">Modo contraste</span>
+                                <span :style="'color: ' + indicadoresC[0]">Alto</span>
+                                <span :style="'color: ' + indicadoresC[1]">Bajo</span>
+                                <span :style="'color: ' + indicadoresC[2]">Normal</span>
+                            </div>
+
+                        </div>
+
+                        <div id="contet7" @click="leerMode = (leerMode + 1) % 3">
+
+                            <div>
+
+                                <button id="bton7" @click="leerMode = (leerMode + 1) % 3">
+                                    <img id="lectura" src="images/lectura.png" alt="Cambiar a modo lectura">
+                                </button>
+
+                            </div>
+
+                            <div>
+                                <span class="button-text">Ayudas lectoras</span>
+                                <span :style="'color: ' + indicadoresL[0]">Linea guia</span>
+                                <span :style="'color: ' + indicadoresL[1]">Mascara</span>
+                                <span :style="'color: ' + indicadoresL[2]">Normal</span>
+                            </div>
+
+                        </div>
+
+                        <div id="contet8" @click="resaltar = !resaltar">
+
+                            <div>
+
+                                <button id="bton4" @click="resaltar = !resaltar">
+                                    <img id="resaltar" src="images/link.png" alt="Resaltar links">
+                                </button>
+
+                            </div>
+
+                            <div>
+                                <span class="button-text">Resaltar links</span>
+                            </div>
+
+                        </div>
+
+                        <div id="contet9" @click="window.scrollTo({ top: 0, behavior: 'smooth' })">
+
+                            <div>
+                                <button id="bton8" @click="window.scrollTo({ top: 0, behavior: 'smooth' })">
+                                    <img id="inicio" src="images/subir.png" alt="subir">
+                                </button>
+                            </div>
+
+                            <div>
+                                <span class="button-text">Ir arriba</span>
+                            </div>
+
+                        </div>
+
+                        <div id="contet10"
+                            @click="window.scrollTo({ top: document.body.scrollHeight, belhavior: 'smooth'})">
+
+                            <div>
+                                <button id="bton9"
+                                    @click="window.scrollTo({ top: document.body.scrollHeight, belhavior: 'smooth'})">
+                                    <img id="final" src="images/bajar.png" alt="bajar">
+                                </button>
+
+                            </div>
+
+                            <div>
+                                <span class="button-text">Ir abajo</span>
+                            </div>
+
+                        </div>
+
+                        <div id="contet11"
+                            @click="grayscale = Math.min(grayscale + 20) % 120; if(grayscale === 120) grayscale = 0;">
+
+                            <div>
+                                <button id="bton10"
+                                    @click="grayscale = Math.min(grayscale + 120) % 120; if(grayscale === 120) grayscale = 0;">
+                                    <img id="mas" src="images/anadir.png" alt="escala de grises">
+                                </button>
+                            </div>
+
+                            <div>
+                                <span class="button-text">Escala gris</span>
+                                <span :style="'color: ' + indicadoresG[0]">20%</span>
+                                <span :style="'color: ' + indicadoresG[1]">40%</span>
+                                <span :style="'color: ' + indicadoresG[2]">60%</span>
+                                <span :style="'color: ' + indicadoresG[3]">80%</span>
+                                <span :style="'color: ' + indicadoresG[4]">100%</span>
+                                <span :style="'color: ' + indicadoresG[5]">0%</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="crosshair" class="crosshair">
+            <div class="line horizontal"></div>
+            <div class="line vertical"></div>
+        </div>
+
+        <script>
+            const originalFontSizes = new Map();
+            let timeoutId;
+
+            // Almacenar los tamaños de fuente originales al cargar la página
+            document.addEventListener('DOMContentLoaded', function () {
+                document.querySelectorAll('*').forEach(element => {
+                    let fontSize = window.getComputedStyle(element).fontSize;
+                    originalFontSizes.set(element, fontSize);
+                });
+
+                document.querySelectorAll('#contet1, #contet2, #contet3, #contet5, #contet6, #contet7, #contet8, #contet9, #contet10, #contet11, #contet12').forEach(element => {
+                    element.addEventListener('mouseenter', function () {
+                        // Cancelar el timeout si ya existe uno
+                        if (timeoutId) {
+                            clearTimeout(timeoutId);
+                        }
+
+                        // Agregar un retraso antes de agregar la clase 'active'
+                        timeoutId = setTimeout(() => {
+                            this.classList.add('active');
+                        }, 0);
+                    });
+
+                    element.addEventListener('mouseleave', function () {
+                        // Cancelar el timeout si ya existe uno
+                        if (timeoutId) {
+                            clearTimeout(timeoutId);
+                        }
+
+                        // Quitar la clase 'active' inmediatamente
+                        this.classList.remove('active');
+                    });
+                });
+            });
+
+            function changeFontSize(element, change) {
+                // Omitir elementos dentro del modal y del botón
+                if (document.querySelector('#modalAcc').contains(element)) {
+                    return;
+                }
+
+                let fontSize = parseFloat(window.getComputedStyle(element).fontSize);
+                element.style.fontSize = `${fontSize + change}px`;
+            }
+
+            function increaseFontSize() {
+                document.querySelectorAll('*').forEach(element => changeFontSize(element, 5));
+            }
+
+            function resetFontSize() {
+                // Restablecer a los tamaños de fuente originales
+                originalFontSizes.forEach((originalFontSize, element) => {
+                    element.style.fontSize = originalFontSize;
+                });
+            }
+
+            function decreaseFontSize() {
+                document.querySelectorAll('*').forEach(element => changeFontSize(element, -5));
+            }
+
+            var myModal = new bootstrap.Modal(document.getElementById('modalAcc'), {
+                backdrop: false
+            });
+
+            myModal._element.addEventListener('shown.bs.modal', function () {
+                document.body.style.overflowY = 'visible';
+            });
+
+            myModal._element.addEventListener('hidden.bs.modal', function () {
+                document.body.style.overflowY = 'auto';
+            });
+
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Floating Whatsapp Chat Demo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="whatsapp-chat.js"></script>
+    <link rel="stylesheet" href="whatsapp-chat.css">
+    <style>
+html,* { font-family: 'Inter'; box-sizing: border-box; }
+body { background-color: #fafafa; line-height:1.6;background-image: linear-gradient(90deg, rgb(190, 90, 247),rgb(22, 91, 145));}
+  .lead { font-size: 1.5rem; font-weight: 300; }
+.container { margin: 150px auto; max-width: 960px; }
+    </style>
+</head>
+
+<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="https://www.jqueryscript.net/social-media/floating-whatsapp-chat.html">Download This Plugin</a></li>
+<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul><div id="carbon-block"></div>
+<div class="jquery-script-ads"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2783044520727903"
+     crossorigin="anonymous"></script>
+<!-- jQuery_demo -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2783044520727903"
+     data-ad-slot="2780937993"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+    <div class="container">
+    <h1>Floating Whatsapp Chat Demo</h1>
+    <p class="lead">A small, flexible, and customizable Whatsapp chat box jQuery plugin that keeps floating on top of the page even when the user scrolls down.</p>
+</div>
+    <div id="example"></div>
+
+</body>
+
+<script type="text/javascript">
+    whatsappchat.multipleUser(
+  {
+    selector: '#example',
+    users: [
+      {
+        name:'jQueryScript',
+        phone: '8801343434343',
+        designation: 'jQueryScript.Net',
+        image : 'https://upload.wikimedia.org/wikipedia/en/d/da/Matt_LeBlanc_as_Joey_Tribbiani.jpg'
+      },
+      {
+        name:'CSSScript',
+        phone: '8801343434343',
+        designation: 'CSSScript.Com',
+        image: 'https://upload.wikimedia.org/wikipedia/en/6/66/Matthew_Perry_as_Chandler_Bing.png'
+
+      },
+      {
+        name:'Vue.js',
+        phone: '8801343434343',
+        active: false
+      },
+    ],
+    headerMessage: 'Feel free to ask any questions in <strong>WhatsApp</strong>',
+    chatBoxMessage: 'Team replies in a minute',
+    color: '#25D366',
+  }
+);
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VDDWMRSTH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1VDDWMRSTH');
+</script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+</html>
