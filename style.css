@@ -2196,6 +2196,11 @@ select.mobile-device {
     background-color: #393939;
 }
 
+.border-footer {
+    border-bottom: 2px solid #0066B2 !important;
+    border-top: 2px solid #0066B2 !important;
+}
+
 .footer .widget-title {
     position: relative;
     display: block;
