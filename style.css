@@ -619,6 +619,28 @@ li.social-links a {
 }
 
 .slide-text {
+    margin-top: 15em;
+    margin-left: 15%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 1;
+}
+
+.primeroo {
+    margin-top: 16.1em;
+    margin-left: 10%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 1;
+}
+
+.segundoo {
+    margin-top: 16em;
+    margin-left: 15%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -702,7 +724,6 @@ li.social-links a {
 .home-one-slider-otem::before {
     content: "";
     position: absolute;
-    background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
     top: 0%;
@@ -2291,7 +2312,6 @@ select.mobile-device {
     width: 100%;
     text-align: left;
     padding: 10px 0px;
-    overflow: hidden;
 }
 
 
@@ -3045,6 +3065,7 @@ select.mobile-device {
     background-color: #DCB00A;
 }
 
+
 .btn-dark {
     padding: 13px 40px;
     font-size: 18px;
@@ -3797,6 +3818,7 @@ select.mobile-device {
 }
 
 .my-form {
+    margin-top: 8%;
     color: #000000;
     font-weight: 600;
 }
@@ -4447,14 +4469,14 @@ input[type=file]::file-selector-button:hover {
     width: 40%;
     height: 7%;
     display: none;
-
+    pointer-events: none;
 }
 
 .line {
     position: absolute;
     background-color: black;
     border-radius: 20px;
-    z-index: 80;
+    z-index: 100;
 
 }
 
@@ -4482,12 +4504,20 @@ input[type=file]::file-selector-button:hover {
     display: none;
     position: absolute;
     width: 100%;
-    height: 200px;
+    height: 150px;
     border-radius: 10px;
     background: white;
     mix-blend-mode: difference;
     pointer-events: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 900;
+}
+
+#contet5 span,
+#contet6 span,
+#contet7 span,
+#contet11 span {
+    font-size: 16px;
+    /* Ajusta este valor al tamaño de fuente deseado */
 }
 
 body::before {
@@ -4498,7 +4528,8 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.5);
+    pointer-events: none;
 }
 
 body.blur::before {
@@ -4630,4 +4661,8 @@ body.blur::before {
         color: #000000;
         text-align: center;
     }
+}
+
+.arreglo{
+    height: 41vh !important;
 }

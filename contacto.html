@@ -19,7 +19,8 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="floating-whatsapp-chat/whatsapp-chat.css">
@@ -95,15 +96,16 @@
                             <div class="social-box">
                                 <ul>
                                     <li>
-                                        <a href="https://twitter.com/HseqSAS_" target="_blank"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+                                        <a href="https://twitter.com/HseqSAS_" target="_blank"><i
+                                                class="bi bi-twitter-x" aria-hidden="true"></i></a>
                                     </li>
                                     <li><a href="https://www.facebook.com/profile.php?id=100086926601773"
                                             target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                                     </li>
                                     <li><a href="https://www.instagram.com/alturashseq/" target="_blank"><i
                                                 class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://wa.me/message/2VKUUO5RPD2MD1" target="_blank"><i class="fa fa-whatsapp"
-                                                aria-hidden="true"></i></a></li>
+                                    <li><a href="https://wa.me/message/2VKUUO5RPD2MD1" target="_blank"><i
+                                                class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -215,10 +217,9 @@
                     <span>Conéctese con nosotros en las redes sociales:</span>
                 </div>
                 <div>
-                    <a href="https://twitter.com/HseqSAS_"
-                        target="_blank" class="me-4 marcas">
+                    <a href="https://twitter.com/HseqSAS_" target="_blank" class="me-4 marcas">
                         <i class="bi bi-twitter-x" aria-hidden="true"></i></a>
-                    
+
                     <a href="https://www.facebook.com/profile.php?id=100086926601773" class="me-4 marcas"
                         target="_blank">
                         <i class="fa fa-facebook-square" aria-hidden="true"></i>
@@ -336,8 +337,7 @@
 
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js"></script>
 
-    <div
-        x-data="{ grayscale: 0, contrasteMode: 0, saturacionMode: 0, leerMode: 0, resaltar: 0, indicadoresS: ['gray', 'gray', 'bue'],indicadoresC: ['gray', 'gray', 'blue'], indicadoresL: ['gray', 'gray', 'blue'], indicadoresG: ['gray', 'gray', 'gray', 'gray', 'gray', 'blue'] }"
+    <div x-data="{ grayscale: 0, contrasteMode: 0, saturacionMode: 0, leerMode: 0, resaltar: 0, indicadoresS: ['gray', 'gray', 'bue'],indicadoresC: ['gray', 'gray', 'blue'], indicadoresL: ['gray', 'gray', 'blue'], indicadoresG: ['gray', 'gray', 'gray', 'gray', 'gray', 'blue'] }"
         x-init="
 
     let grayscaleFilter = '';
@@ -564,7 +564,7 @@ document.documentElement.style.filter = contrastFilter + ' ' + grayscaleFilter +
 
                             <div>
                                 <span class="button-text">Ayudas lectoras</span>
-                                <span :style="'color: ' + indicadoresL[0]">Linea guia</span>
+                                <span :style="'color: ' + indicadoresL[0]">Línea guía</span>
                                 <span :style="'color: ' + indicadoresL[1]">Mascara</span>
                                 <span :style="'color: ' + indicadoresL[2]">Normal</span>
                             </div>
@@ -645,87 +645,107 @@ document.documentElement.style.filter = contrastFilter + ' ' + grayscaleFilter +
                 </div>
             </div>
         </div>
-        </div>
+    </div>
 
-        <div id="crosshair" class="crosshair">
-            <div class="line horizontal"></div>
-            <div class="line vertical"></div>
-        </div>
+    <div id="crosshair" class="crosshair">
+        <div class="line horizontal"></div>
+        <div class="line vertical"></div>
+    </div>
 
-        <script>
-            const originalFontSizes = new Map();
-            let timeoutId;
+    <script>
+        const originalFontSizes = new Map();
+        let timeoutId;
 
-            // Almacenar los tamaños de fuente originales al cargar la página
-            document.addEventListener('DOMContentLoaded', function () {
-                document.querySelectorAll('*').forEach(element => {
-                    let fontSize = window.getComputedStyle(element).fontSize;
-                    originalFontSizes.set(element, fontSize);
-                });
-
-                document.querySelectorAll('#contet1, #contet2, #contet3, #contet5, #contet6, #contet7, #contet8, #contet9, #contet10, #contet11, #contet12').forEach(element => {
-                    element.addEventListener('mouseenter', function () {
-                        // Cancelar el timeout si ya existe uno
-                        if (timeoutId) {
-                            clearTimeout(timeoutId);
-                        }
-
-                        // Agregar un retraso antes de agregar la clase 'active'
-                        timeoutId = setTimeout(() => {
-                            this.classList.add('active');
-                        }, 0);
-                    });
-
-                    element.addEventListener('mouseleave', function () {
-                        // Cancelar el timeout si ya existe uno
-                        if (timeoutId) {
-                            clearTimeout(timeoutId);
-                        }
-
-                        // Quitar la clase 'active' inmediatamente
-                        this.classList.remove('active');
-                    });
-                });
-            });
-
-            function changeFontSize(element, change) {
-                // Omitir elementos dentro del modal y del botón
-                if (document.querySelector('#modalAcc').contains(element)) {
+        // Almacenar los tamaños de fuente originales al cargar la página
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, li, span').forEach(element => {
+                // Omitir elementos dentro del modal
+                if (element.closest('#modalAcc')) {
                     return;
                 }
+                let fontSize = window.getComputedStyle(element).fontSize;
+                originalFontSizes.set(element, fontSize);
+            });
 
-                let fontSize = parseFloat(window.getComputedStyle(element).fontSize);
-                element.style.fontSize = `${fontSize + change}px`;
-            }
+            document.querySelectorAll('#contet1, #contet2, #contet3, #contet5, #contet6, #contet7, #contet8, #contet9, #contet10, #contet11, #contet12').forEach(element => {
+                element.addEventListener('mouseenter', function () {
+                    // Cancelar el timeout si ya existe uno
+                    if (timeoutId) {
+                        clearTimeout(timeoutId);
+                    }
 
-            function increaseFontSize() {
-                document.querySelectorAll('*').forEach(element => changeFontSize(element, 5));
-            }
-
-            function resetFontSize() {
-                // Restablecer a los tamaños de fuente originales
-                originalFontSizes.forEach((originalFontSize, element) => {
-                    element.style.fontSize = originalFontSize;
+                    // Agregar un retraso antes de agregar la clase 'active'
+                    timeoutId = setTimeout(() => {
+                        this.classList.add('active');
+                    }, 0);
                 });
+
+                element.addEventListener('mouseleave', function () {
+                    // Cancelar el timeout si ya existe uno
+                    if (timeoutId) {
+                        clearTimeout(timeoutId);
+                    }
+
+                    // Quitar la clase 'active' inmediatamente
+                    this.classList.remove('active');
+                });
+            });
+        });
+
+        function changeFontSize(element, change) {
+            // Omitir elementos dentro del modal
+            if (element.closest('#modalAcc')) {
+                return;
             }
 
-            function decreaseFontSize() {
-                document.querySelectorAll('*').forEach(element => changeFontSize(element, -5));
+            let fontSize = parseFloat(window.getComputedStyle(element).fontSize);
+
+            if ((fontSize >= 26 && change > 0) || (fontSize <= 12 && change < 0)) {
+                return;
             }
+            element.style.fontSize = `${fontSize + change}px`;
+        }
 
-            var myModal = new bootstrap.Modal(document.getElementById('modalAcc'), {
-                backdrop: false
+        function increaseFontSize() {
+            document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, li, span').forEach(element => {
+                // Omitir elementos dentro del modal
+                if (!element.closest('#modalAcc')) {
+                    changeFontSize(element, 5);
+                }
             });
+        }
 
-            myModal._element.addEventListener('shown.bs.modal', function () {
-                document.body.style.overflowY = 'visible';
+        function resetFontSize() {
+            // Restablecer a los tamaños de fuente originales
+            originalFontSizes.forEach((originalFontSize, element) => {
+                if (!element.closest('#modalAcc')) {
+                    element.style.fontSize = originalFontSize;
+                }
             });
+        }
 
-            myModal._element.addEventListener('hidden.bs.modal', function () {
-                document.body.style.overflowY = 'auto';
+        function decreaseFontSize() {
+            document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, li, span').forEach(element => {
+                // Omitir elementos dentro del modal
+                if (!element.closest('#modalAcc')) {
+                    changeFontSize(element, -3);
+                }
             });
+        }
 
-        </script>
+        var myModal = new bootstrap.Modal(document.getElementById('modalAcc'), {
+            backdrop: false
+        });
+
+        myModal._element.addEventListener('shown.bs.modal', function () {
+            document.body.style.overflowY = 'visible';
+        });
+
+        myModal._element.addEventListener('hidden.bs.modal', function () {
+            document.body.style.overflowY = 'auto';
+        });
+
+    </script>
 
 </body>
 

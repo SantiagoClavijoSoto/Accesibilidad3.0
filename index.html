@@ -20,7 +20,8 @@
     crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="floating-whatsapp-chat/whatsapp-chat.css">
@@ -72,7 +73,7 @@
                     <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body bg-white">
                         <img class="img-fluid" src="images/pop-up-aviso.png"
                             alt="Imagen de aviso de prevención sobre la suplantación de identidad de la empresa">
                     </div>
@@ -115,7 +116,8 @@
                             <div class="social-box">
                                 <ul>
                                     <li><a href="https://twitter.com/HseqSAS_" target="_blank"
-                                            aria-label="Siganos en Twitter"><i class="bi bi-twitter-x" aria-hidden="true"></i>
+                                            aria-label="Siganos en Twitter"><i class="bi bi-twitter-x"
+                                                aria-hidden="true"></i>
                                         </a>
                                     </li>
                                     <li><a href="https://www.facebook.com/profile.php?id=100086926601773"
@@ -177,13 +179,12 @@
                     <div class="container">
                         <div class="row">
                             <div class="slider-content-area">
-                                <div class="slide-text">
-                                    <h1 class="homepage-three-title">Formación en alturas</h1>
+                                <div class="slide-tex primeroo">
                                     <div class="slider-content-btn effect-1">
                                         <a class="button btn btn-light btn-radius btn-brd"
-                                            href="formacion_en_alturas.html">Leer más</a>
+                                            href="https://hseqvirtual.com/" target="_blank">Leer más</a>
                                         <a class="button btn btn-light btn-radius btn-brd"
-                                            href="contacto.html">Contáctenos</a>
+                                            href="https://wa.me/message/SCF64Z5YSQ2SA1" target="_blank">Contáctenos</a>
                                     </div>
                                 </div>
                             </div>
@@ -194,13 +195,12 @@
                     <div class="container">
                         <div class="row">
                             <div class="slider-content-area">
-                                <div class="slide-text">
-                                    <h1 class="homepage-three-title">Cursos</h1>
+                                <div class="slide-tex segundoo">
                                     <div class="slider-content-btn effect-1">
-                                        <a class="button btn btn-light btn-radius btn-brd" href="cursos.html">Leer
+                                        <a class="button btn btn-light btn-radius btn-brd" href="https://consultoriaycapacitacionhseq.com/" target="_blank">Leer
                                             más</a>
                                         <a class="button btn btn-light btn-radius btn-brd"
-                                            href="contacto.html">Contáctenos</a>
+                                            href="https://wa.me/message/SCF64Z5YSQ2SA1" target="_blank">Contáctenos</a>
                                     </div>
                                 </div>
                             </div>
@@ -212,12 +212,11 @@
                         <div class="row">
                             <div class="slider-content-area">
                                 <div class="slide-text">
-                                    <h1 class="homepage-three-title">Servicios</h1>
                                     <div class="slider-content-btn effect-1">
-                                        <a class="button btn btn-light btn-radius btn-brd" href="servicios.html">Leer
+                                        <a class="button btn btn-light btn-radius btn-brd" href="formacion_en_alturas.html">Leer
                                             más</a>
                                         <a class="button btn btn-light btn-radius btn-brd"
-                                            href="contacto.html">Contáctenos</a>
+                                            href="https://wa.me/message/SCF64Z5YSQ2SA1" target="_blank">Contáctenos</a>
                                     </div>
                                 </div>
                             </div>
@@ -942,7 +941,7 @@
 
                                 <div>
                                     <span class="button-text">Ayudas lectoras</span>
-                                    <span :style="'color: ' + indicadoresL[0]">Linea guia</span>
+                                    <span :style="'color: ' + indicadoresL[0]">Línea guía</span>
                                     <span :style="'color: ' + indicadoresL[1]">Mascara</span>
                                     <span :style="'color: ' + indicadoresL[2]">Normal</span>
                                 </div>
@@ -1030,17 +1029,17 @@
         <div class="line vertical"></div>
     </div>
 
-
-
-
-
     <script>
         const originalFontSizes = new Map();
         let timeoutId;
 
         // Almacenar los tamaños de fuente originales al cargar la página
         document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('*').forEach(element => {
+            document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, li, span').forEach(element => {
+                // Omitir elementos dentro del modal
+                if (element.closest('#modalAcc')) {
+                    return;
+                }
                 let fontSize = window.getComputedStyle(element).fontSize;
                 originalFontSizes.set(element, fontSize);
             });
@@ -1071,28 +1070,44 @@
         });
 
         function changeFontSize(element, change) {
-            // Omitir elementos dentro del modal y del botón
-            if (document.querySelector('#modalAcc').contains(element)) {
+            // Omitir elementos dentro del modal
+            if (element.closest('#modalAcc')) {
                 return;
             }
 
             let fontSize = parseFloat(window.getComputedStyle(element).fontSize);
+
+            if ((fontSize >= 26 && change > 0) || (fontSize <= 12 && change < 0)) {
+                return;
+            }
             element.style.fontSize = `${fontSize + change}px`;
         }
 
         function increaseFontSize() {
-            document.querySelectorAll('*').forEach(element => changeFontSize(element, 5));
+            document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, li, span').forEach(element => {
+                // Omitir elementos dentro del modal
+                if (!element.closest('#modalAcc')) {
+                    changeFontSize(element, 5);
+                }
+            });
         }
 
         function resetFontSize() {
             // Restablecer a los tamaños de fuente originales
             originalFontSizes.forEach((originalFontSize, element) => {
-                element.style.fontSize = originalFontSize;
+                if (!element.closest('#modalAcc')) {
+                    element.style.fontSize = originalFontSize;
+                }
             });
         }
 
         function decreaseFontSize() {
-            document.querySelectorAll('*').forEach(element => changeFontSize(element, -5));
+            document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, li, span').forEach(element => {
+                // Omitir elementos dentro del modal
+                if (!element.closest('#modalAcc')) {
+                    changeFontSize(element, -3);
+                }
+            });
         }
 
         var myModal = new bootstrap.Modal(document.getElementById('modalAcc'), {

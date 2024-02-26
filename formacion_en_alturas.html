@@ -258,7 +258,8 @@
                             <p><a class="nav-link active nav-veri2 effect-1"
                                     href="vericacion_de_certificados.html">Verificar
                                     Certificados</a></p>
-                            <p><a class="nav-link text-center active nav-veri2 effect-1" href="trabaje_con_nosotros.html">Trabaje
+                            <p><a class="nav-link text-center active nav-veri2 effect-1"
+                                    href="trabaje_con_nosotros.html">Trabaje
                                     con
                                     nosotros</a></p>
                             <p><a class="nav-link active nav-veri2 effect-1" href="pqrs.html">PQRS</a></p>
@@ -558,7 +559,7 @@
 
                             <div>
                                 <span class="button-text">Ayudas lectoras</span>
-                                <span :style="'color: ' + indicadoresL[0]">Linea guia</span>
+                                <span :style="'color: ' + indicadoresL[0]">Línea guía</span>
                                 <span :style="'color: ' + indicadoresL[1]">Mascara</span>
                                 <span :style="'color: ' + indicadoresL[2]">Normal</span>
                             </div>
@@ -652,7 +653,11 @@
 
         // Almacenar los tamaños de fuente originales al cargar la página
         document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('*').forEach(element => {
+            document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, li, span').forEach(element => {
+                // Omitir elementos dentro del modal
+                if (element.closest('#modalAcc')) {
+                    return;
+                }
                 let fontSize = window.getComputedStyle(element).fontSize;
                 originalFontSizes.set(element, fontSize);
             });
@@ -683,28 +688,44 @@
         });
 
         function changeFontSize(element, change) {
-            // Omitir elementos dentro del modal y del botón
-            if (document.querySelector('#modalAcc').contains(element)) {
+            // Omitir elementos dentro del modal
+            if (element.closest('#modalAcc')) {
                 return;
             }
 
             let fontSize = parseFloat(window.getComputedStyle(element).fontSize);
+
+            if ((fontSize >= 26 && change > 0) || (fontSize <= 12 && change < 0)) {
+                return;
+            }
             element.style.fontSize = `${fontSize + change}px`;
         }
 
         function increaseFontSize() {
-            document.querySelectorAll('*').forEach(element => changeFontSize(element, 5));
+            document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, li, span').forEach(element => {
+                // Omitir elementos dentro del modal
+                if (!element.closest('#modalAcc')) {
+                    changeFontSize(element, 5);
+                }
+            });
         }
 
         function resetFontSize() {
             // Restablecer a los tamaños de fuente originales
             originalFontSizes.forEach((originalFontSize, element) => {
-                element.style.fontSize = originalFontSize;
+                if (!element.closest('#modalAcc')) {
+                    element.style.fontSize = originalFontSize;
+                }
             });
         }
 
         function decreaseFontSize() {
-            document.querySelectorAll('*').forEach(element => changeFontSize(element, -5));
+            document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, li, span').forEach(element => {
+                // Omitir elementos dentro del modal
+                if (!element.closest('#modalAcc')) {
+                    changeFontSize(element, -3);
+                }
+            });
         }
 
         var myModal = new bootstrap.Modal(document.getElementById('modalAcc'), {
