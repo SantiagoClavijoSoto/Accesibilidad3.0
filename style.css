@@ -167,7 +167,7 @@ h6 a:hover {
 }
 
 .nosotros h3 {
-    font-size: 42px;
+    font-size: 24px;
     font-weight: 900;
     line-height: 62px;
     margin: 0 0 40px;
@@ -4002,10 +4002,10 @@ input[type=file]::file-selector-button:hover {
     height: auto;
 }
 
-.style-font {
+/* .style-font {
     font-size: 1.5rem !important;
     font-weight: 900 !important;
-}
+} */
 
 .btn-center {
     display: flex;
@@ -4110,9 +4110,9 @@ input[type=file]::file-selector-button:hover {
 }
 
 #modalAcc {
-    width: 15%;
+    width: 20%;
     height: 50%;
-    margin-left: 85%;
+    margin-left: 80.1%;
     top: 22%;
     border-radius: 5px;
 }
@@ -4134,13 +4134,12 @@ input[type=file]::file-selector-button:hover {
 #titulo {
     font-size: 20px;
     font-weight: 600;
-    color: #000000;
+    color: #fff;
     text-align: center;
 }
 
 #contet1 {
-    display: flex;
-    justify-content: flex-start;
+    padding: 2%;
     align-items: center;
     width: auto;
     height: auto;
@@ -4152,11 +4151,10 @@ input[type=file]::file-selector-button:hover {
     border-radius: 5px;
     font-weight: 700;
     line-height: 1.2;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-#contet2 {
-    display: flex;
-    justify-content: flex-start;
+/* #contet2 {
     align-items: center;
     width: auto;
     height: auto;
@@ -4168,6 +4166,7 @@ input[type=file]::file-selector-button:hover {
     border-radius: 5px;
     font-weight: 700;
     line-height: 1.2;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 #contet3 {
@@ -4184,7 +4183,8 @@ input[type=file]::file-selector-button:hover {
     border-radius: 5px;
     font-weight: 700;
     line-height: 1.2;
-}
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.25);
+} */
 
 #contet5 {
     display: flex;
@@ -4199,6 +4199,7 @@ input[type=file]::file-selector-button:hover {
     margin-bottom: 10px;
     border-radius: 5px;
     font-weight: 700;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 #contet6 {
@@ -4214,6 +4215,7 @@ input[type=file]::file-selector-button:hover {
     margin-bottom: 10px;
     border-radius: 5px;
     font-weight: 700;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 #contet7 {
@@ -4229,6 +4231,7 @@ input[type=file]::file-selector-button:hover {
     margin-bottom: 10px;
     border-radius: 5px;
     font-weight: 700;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 #contet8 {
@@ -4244,6 +4247,7 @@ input[type=file]::file-selector-button:hover {
     margin-bottom: 10px;
     border-radius: 5px;
     font-weight: 700;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 #contet9 {
@@ -4259,6 +4263,7 @@ input[type=file]::file-selector-button:hover {
     margin-bottom: 10px;
     border-radius: 5px;
     font-weight: 700;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 #contet10 {
@@ -4274,6 +4279,7 @@ input[type=file]::file-selector-button:hover {
     margin-bottom: 10px;
     border-radius: 5px;
     font-weight: 700;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 #contet11 {
@@ -4289,6 +4295,7 @@ input[type=file]::file-selector-button:hover {
     margin-bottom: 10px;
     border-radius: 5px;
     font-weight: 700;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -4313,9 +4320,10 @@ input[type=file]::file-selector-button:hover {
     align-items: center;
     background-color: #fff;
     border-radius: 5px;
+    border: transparent;
 }
 
-#contet2 button {
+/* #contet2 button {
     width: 40px;
     height: 40px;
     display: flex;
@@ -4323,6 +4331,8 @@ input[type=file]::file-selector-button:hover {
     align-items: center;
     background-color: #fff;
     border-radius: 5px;
+    border: transparent;
+    box-shadow: inset 2px 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 #contet3 button {
@@ -4333,7 +4343,9 @@ input[type=file]::file-selector-button:hover {
     align-items: center;
     background-color: #fff;
     border-radius: 5px;
-}
+    border: transparent;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.25);
+} */
 
 #contet5 button {
     width: 40px;
@@ -4343,6 +4355,7 @@ input[type=file]::file-selector-button:hover {
     align-items: center;
     background-color: #fff;
     border-radius: 5px;
+    border: transparent;
 }
 
 #contet6 button {
@@ -4353,6 +4366,7 @@ input[type=file]::file-selector-button:hover {
     align-items: center;
     background-color: #fff;
     border-radius: 5px;
+    border: transparent;
 }
 
 #contet7 button {
@@ -4363,6 +4377,7 @@ input[type=file]::file-selector-button:hover {
     align-items: center;
     background-color: #fff;
     border-radius: 5px;
+    border: transparent;
 }
 
 #contet8 button {
@@ -4373,7 +4388,7 @@ input[type=file]::file-selector-button:hover {
     align-items: center;
     background-color: #fff;
     border-radius: 5px;
-
+    border: transparent;
 }
 
 #contet9 button {
@@ -4384,6 +4399,7 @@ input[type=file]::file-selector-button:hover {
     align-items: center;
     background-color: #fff;
     border-radius: 5px;
+    border: transparent;
 }
 
 #contet10 button {
@@ -4394,6 +4410,7 @@ input[type=file]::file-selector-button:hover {
     align-items: center;
     background-color: #fff;
     border-radius: 5px;
+    border: transparent;
 }
 
 #contet11 button {
@@ -4404,6 +4421,7 @@ input[type=file]::file-selector-button:hover {
     align-items: center;
     background-color: #fff;
     border-radius: 5px;
+    border: transparent;
 }
 
 
@@ -4439,7 +4457,17 @@ input[type=file]::file-selector-button:hover {
 #contet8.active,
 #contet9.active,
 #contet10.active,
-#contet11.active {
+#contet11.active,
+#bton1.active,
+#bton2.active,
+#bton3.active,
+#bton4.active,
+#bton5.active,
+#bton6.active,
+#bton7.active,
+#bton8.active,
+#bton9.active,
+#bton10.active {
     animation: grow 0.5s ease-in-out forwards;
 }
 
@@ -4452,7 +4480,17 @@ input[type=file]::file-selector-button:hover {
 #contet8:not(.active),
 #contet9:not(.active),
 #contet10:not(.active),
-#contet11:not(.active) {
+#contet11:not(.active),
+#bton1:not(.active),
+#bton2:not(.active),
+#bton3:not(.active),
+#bton4:not(.active),
+#bton5:not(.active),
+#bton6:not(.active),
+#bton7:not(.active),
+#bton8:not(.active),
+#bton9:not(.active),
+#bton10:not(.active) {
     animation: shrink 0.5s ease-in-out forwards;
 }
 
@@ -4571,9 +4609,9 @@ body.blur::before {
 
     #titulo {
         font-size: 25px;
+        color: #fff;
         /* Ajusta el tamaño de la fuente del título según sea necesario */
         font-weight: 600;
-        color: #000000;
         text-align: center;
     }
 }
@@ -4588,6 +4626,7 @@ body.blur::before {
 
     #titulo {
         font-size: 16px;
+        color: #fff;
     }
 
     #contet1,
@@ -4604,23 +4643,9 @@ body.blur::before {
         gap: 5px;
     }
 
-    #contet1 button,
-    #contet2 button,
-    #contet3 button,
-    #contet5 button,
-    #contet6 button,
-    #contet7 button,
-    #contet8 button,
-    #contet9 button,
-    #contet10 button,
-    #contet11 button,
-    #contet12 button {
-        width: 30px;
-        height: 30px;
-    }
-
     .button-text {
         font-size: small;
+        margin-top: 2px !important;
     }
 
     #contraste,
@@ -4670,6 +4695,19 @@ body.blur::before {
         color: #000000;
         text-align: center;
     }
+}
+
+.modalmsj {
+    text-align: center;
+    margin-top: 10%;
+    width: 50%;
+    height: 20%;
+    overflow: hidden;
+    margin-left: 25%;
+}
+
+.encabezado {
+    background-color: #EC1C24 !important;
 }
 
 .arreglo{
