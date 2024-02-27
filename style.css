@@ -59,6 +59,7 @@
 
 body {
     color: #999;
+    background-color: #ffffff !important;
     font-size: 15px;
     font-family: 'Raleway', sans-serif;
     line-height: 1.80857;
@@ -259,6 +260,10 @@ ol {
 
 .text-decoration-line {
     text-decoration-line: underline !important;
+}
+
+.text-decoration-line:hover {
+    color: #DCB00A;
 }
 
 /*------------------------------------------------------------------
@@ -3817,8 +3822,8 @@ select.mobile-device {
     height: 50px;
 }
 
-.my-form {
-    margin-top: 8%;
+.certif {
+    margin-top: 6%;
     color: #000000;
     font-weight: 600;
 }
@@ -4081,6 +4086,7 @@ input[type=file]::file-selector-button:hover {
     width: 55px;
     height: 55px;
     border-radius: 50px;
+    background-repeat: no-repeat;
 }
 
 @keyframes grow {
@@ -4503,14 +4509,16 @@ input[type=file]::file-selector-button:hover {
 .reading-mask {
     display: none;
     position: absolute;
-    width: 100%;
-    height: 150px;
+    width: 250%;
+    height: 200px;
     border-radius: 10px;
-    background: white;
-    mix-blend-mode: difference;
+    background-color: white;
+    box-shadow: inset 0 10px 0 0 #DCB00A, inset 0 -10px 0 0 #0066B2;
+    mix-blend-mode: overlay;
     pointer-events: none;
     z-index: 900;
 }
+
 
 #contet5 span,
 #contet6 span,
@@ -4530,6 +4538,7 @@ body::before {
     height: 100%;
     background-color: rgb(0, 0, 0, 0.5);
     pointer-events: none;
+    z-index: 150;
 }
 
 body.blur::before {
