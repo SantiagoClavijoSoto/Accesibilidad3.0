@@ -708,7 +708,7 @@
         var messageModal = new bootstrap.Modal(document.getElementById('messageModal'));
 
         myModal._element.addEventListener('shown.bs.modal', function () {
-            if (!hasModalOpenedBefore) {
+            if (!hasModalOpenedBefore && window.innerWidth > 1100) {
                 messageModal.show();
                 hasModalOpenedBefore = true;
             }
